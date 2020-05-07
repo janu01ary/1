@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>My Blog</title>
+        <style>
+            * {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        {% for blog in blogs.all%}
+            <h1>{{blog.title}}</h1>
+            <p>{{blog.pub_date}}</p>
+            <p>{{blog.body}}</p>
+            <br><br>
+        {%endfor%}
+    </body>
+</html>
